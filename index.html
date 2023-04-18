@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фотолокации Череповца</title>    
-    <link rel="icon" type="image/png" href="i.png">
+    <link rel="icon" type="image/png" href="i.png?v=2">
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- For including header and footer files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       $(function() {
@@ -35,21 +37,21 @@
           object-fit: cover;
       }
       .swiper-button-next, .swiper-rtl{
-          right: 60px !important;
+          right: 40px !important;
           left: auto;
-          padding-top: 15%;
+          padding: top 10px;
           color: black;
       }
       .swiper-button-prev, .swiper-rtl{
-          left: 460px !important;
+          left: 480px !important;
           right: auto;
-          padding-top: 15%;
+          padding: top 10px;
           color: black;
       }
 
       [class*="copyrights-pane"]{
       }
-  </style>
+    </style>
   </head>
   <body class="bg-gradient-to-r from-[#4F6096] via-[#8085B8] to-[#43CBC7]">
     
@@ -57,47 +59,73 @@
     <header></header>
 
     <!--**************!Main*************-->
-    <div class="mx-auto max-w-4xl w-full m-2 bg-white/40  p-6 rounded-md">
-      <h1 class="text-2xl font-bold mb-4 text-center">Урбанистический фототуризм</h1>
-      <p class="mb-2">
-        <span class="font-bold"> Урбанистический фототуризм </span>- это разновидность фототуризма, которая связана с фотографированием 
-        городских пейзажей, зданий, улиц и других элементов городской архитектуры. Целью данного вида туризма 
-        является не только получение качественных фотографий, но и знакомство с уличной культурой, искусством 
-        граффити и стрит-арта, архитектурными достопримечательностями и другими интересными элементами городской жизни.
-      </p>
-      <p>
-        Данный ресурс располагает основным списком фотолокаций Череповца, а также наиболее благоприятными ракурсами для фотографий, 
-        настроек выдержки, расположения камер.
-      </p>
+    <div class="flex w-full h-[90vh]">
+      <div class="w-full md:w-1/3 bg-white/40 p-6">
+        <h1 class="text-2xl font-bold mb-4 text-center">Урбанистический фототуризм</h1>
+        <p class="mb-2 text-justify">
+          <span class="font-bold"> Урбанистический фототуризм </span>- это разновидность фототуризма, которая связана с фотографированием 
+          городских пейзажей, зданий, улиц и других элементов городской архитектуры. Целью данного вида туризма 
+          является не только получение качественных фотографий, но и знакомство с уличной культурой, искусством 
+          граффити и стрит-арта, архитектурными достопримечательностями и другими интересными элементами городской жизни.
+        </p>
+        <p class="text-justify">
+          Данный ресурс располагает основным списком фотолокаций Череповца, а также наиболее благоприятными ракурсами для фотографий, 
+          настроек выдержки, расположения камер.
+        </p>
+      </div>
+  
+      <div class="rounded-md w-full md:w-2/3">
+        <div class="swiper mySwiper object-cover h-full">
+            <div class="swiper-wrapper object-cover h-full">
+                <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="usadba-galskih.png" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/7d/d3/05/2020.jpg?w=1200&h=-1&s=1" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/f0/ae/aa/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/8c/5a/b3/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
+                <div class="swiper-slide"><img class="w-full h-full object-cover object-center" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/8c/5a/ad/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+  
     </div>
 
-    <div class="rounded-md max-w-auto w-full">
-      <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/61/37/40/2020.jpg?w=1200&h=-1&s=1" alt=""></div>
-              <div class="swiper-slide"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/7d/d3/05/2020.jpg?w=1200&h=-1&s=1" alt=""></div>
-              <div class="swiper-slide"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/f0/ae/aa/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
-              <div class="swiper-slide"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/8c/5a/b3/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
-              <div class="swiper-slide"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/8c/5a/ad/caption.jpg?w=1200&h=-1&s=1" alt=""></div>
-          </div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
 
     <div class="mx-auto max-w-4xl w-full m-2 bg-white/40  p-6 rounded-md">
       <h2 class="text-xl font-bold mb-4 text-center">Фотолокации Череповца:</h2>
-      <ul class="list-disc list-inside pl-6">
-        <li><a href="museum-metallurgy" class="transition duration-300 hover:text-blue-500">Музей металлургической промышленности</a></li>
-        <li><a href="vereshchagin-museum">Дом-Музей Верещагина</a></li>
-        <li><a href="galskih-museum">Историко-Этнографический Музей Усадьба Гальских</a></li>
-        <li><a href="bashlachev-museum">Музей Александра Башлачёва</a></li>
-        <li><a href="milutin-museum.html">Музей Дом И. А.Милютина</a></li>
-        <li><a href="resurrection-cathedral">Собор Воскресения Христова</a></li>
-        <li><a href="raduzhny-aquapark">Аквапарк Радужный</a></li>
-        <li><a href="feodosia-and-afanasy-monument">Памятник основателям Череповца - инокам Феодосию и Афанасию</a></li>
-        <li><a href="medical-sister-monument">Памятник медицинской сестре</a></li>
-        <li><a href="uspenie-cerkvi-nelazskoe">Церковь Успения Пресвятой Богородицы в Нелазском</a></li>
+      <ul class="list-disc list-inside pl-6 text-lg">
+        <li><a href="usadba-galskih.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Усадьба Гальских</a></li>
+        <li><a href="voskres-sobor.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Воскресенский собор</a></li>
+        <li><a href="solyanoy-sad.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Соляной сад</a></li>
+        <li><a href="kamerniy-teatr.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Камерный театр</a></li>        
+        <li><a href="khudozest-museum.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Художественный музей</a></li>
+        <li><a href="milutin-museum.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Музей Дом И. А.Милютина</a></li>
+        <li><a href="park-pobedi.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Парк Победы</a></li>
+        <li><a href="hram-rozd-christ.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Храм Рождества Христова</a></li>
+        <li><a href="sobor-afanasy-and-feodosia.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Собор Афанасия и Феодосия Череповецких</a></li>
+        <li><a href="feodosia-and-afanasy-monument" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Памятник основателям Череповца - инокам Феодосию и Афанасию</a></li>
+        <li><a href="metalurg-monument.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Памятник металлургам</a></li>
+        <li><a href="ploshad-milyutina.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Площадь И. А. Милютина</a></li>
+        <li><a href="muz-i-kino-komsomolec.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Дом музыки и кино «Комсомолец»</a></li>
+        <li><a href="svetomuz-fontan.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Светомузыкальный фонтан</a></li>
+        <li><a href="museum-aleksandr-bashla.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Музей Александра Башлачева</a></li>
+        <li><a href="chasovnya-fillipa.html" class="transition duration-300 ease rounded-md px-2 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300">
+          Часовня Филиппа Ирапского</a></li>
       </ul>
     </div>
 
